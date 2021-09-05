@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background: rgba(255, 155, 155);
+}
+
+.frame {
+  width: 50%;
+}
+
+.fcont {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.frameContainer {
+  /* IDK */
+}
+
+.frameContainer img {
+  box-shadow: 10px -5px rgb(0, 162, 255);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.frameContainer h4 {
+  padding: 5px;
+  color: rgba(10, 0, 100);
+  text-transform: uppercase;
+}
+
+.frameContainer h5 {
+  color: rgb(100, 162, 255);
+}
+
+.frameContainer p {
+  padding: 10px;
+  color: rgb(50, 100, 150);
+}
+
+span {
+  position: absolute;
+  color: rgb(0, 162, 255);
+  font-weight: 1000;
+  cursor: pointer;
+}
+.span1 {
+  margin-left: -20px;
+}
+.span2 {
+  margin-left: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  width: 120px;
+  height: 30px;
+  align-items: center;
+  margin-top: 30px;
+  color: rgb(50, 100, 150);
+  background: rgba(0, 162, 255, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.btn:hover {
+  background: rgba(0, 162, 255, 0.7);
+  color: rgb(45, 84, 124);
+}

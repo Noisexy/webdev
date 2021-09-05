@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cardContainer {
+  background: rgb(221, 221, 221);
+}
+
+.cardContainer:hover {
+  animation: anim 0.6s forwards;
+}
+
+@keyframes anim {
+  0% {
+    height: 70px;
+    width: 90%;
+  }
+  100% {
+    height: 100px;
+    background: rgb(173, 173, 173);
+  }
+}
+
+body {
+  background: salmon;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.frame {
+  width: 28vw;
+  min-height: 10vh;
+  background: #fafafa;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgb(74, 74, 252);
+  color: white;
+  top: 700px;
+}

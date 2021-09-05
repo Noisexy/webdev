@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0e0e0;
+}
+.container {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: #e0e0e0;
+}
+
+.btn {
+  border: red solid 1px;
+  margin: 20px;
+  width: 170px;
+  height: 40px;
+  border-radius: 5px;
+  color: red;
+  background: #fff;
+}
+
+.readBtn {
+  border: none;
+  margin-left: 10px;
+  background: #fff;
+  color: rgb(29, 63, 253);
+}
