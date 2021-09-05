@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.titleContainer h1 {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(5, 2, 36);
+}
+
+.underline {
+  margin-left: 45%;
+  width: 10%;
+  outline: solid rosybrown;
+}
+
+.btnContainer {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  margin: 10px;
+  margin-left: 20px;
+  color: rgb(247, 194, 133);
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  text-align: center;
+  border-radius: 5px;
+}
+
+span:hover {
+  background: rgb(247, 194, 133);
+  color: white;
+}
+
+span:nth-child(1) {
+  width: 50px;
+}
+
+span:nth-child(2) {
+  width: 100px;
+}
+
+span:nth-child(3) {
+  width: 70px;
+}
+
+span:nth-child(4) {
+  width: 70px;
+}
+.menuDis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.menuDisplay {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 70%;
+}
+
+img {
+  width: 40%;
+  border: solid rgb(247, 194, 133);
+}
+
+.itemContainer {
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  margin: 10px;
+}
+
+.itemContainer h3 {
+  position: absolute;
+  margin-top: -7%;
+  margin-left: 14%;
+  word-spacing: 10px;
+  color: rgb(5, 2, 36);
+}
+
+.itemContainer h4 {
+  position: absolute;
+  margin-top: -7%;
+  margin-left: 27%;
+  color: rgb(247, 194, 133);
+}
+
+.itemContainer p {
+  font-size: 20px;
+  color: rgba(5, 2, 36, 0.664);
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .menuDisplay {
+    grid-template-columns: 1fr;
+  }
+
+  .itemContainer h3 {
+    margin-left: 28%;
+    margin-top: -12%;
+  }
+
+  .itemContainer h4 {
+    margin-left: 58%;
+    margin-top: -12%;
+  }
+}
