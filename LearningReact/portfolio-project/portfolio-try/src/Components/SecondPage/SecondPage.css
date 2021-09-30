@@ -1,0 +1,189 @@
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-image: url("../../Images/stacked-waves-haikei.svg");
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+@-webkit-keyframes moveBg2 {
+  0% {
+    background-position: bottom;
+  }
+  50% {
+    background-position: center;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+
+@keyframes moveBg2 {
+  0% {
+    background-position: bottom;
+  }
+  50% {
+    background-position: center;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+
+.about .aboutMeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 90%;
+}
+
+.about .aboutMeContainer .aboutMeTextContainer {
+  margin-left: 100px;
+  text-align: center;
+}
+
+.about .aboutMeContainer .aboutMeTextContainer h1 {
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.about .aboutMeContainer .aboutMeTextContainer p {
+  max-width: 350px;
+  font-size: 1.5rem;
+  color: gray;
+  font-family: TextFont;
+}
+
+.codingContainer {
+  opacity: 0;
+  width: 50%;
+  height: 80vh;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.codingContainer .codingChild1 {
+  z-index: 10;
+  width: 80%;
+  height: 5%;
+  background: #04293a;
+  border-radius: 8px;
+  margin-top: -500px;
+  -webkit-box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.codingContainer .codingChild1 span {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.codingContainer .codingChild1 span:nth-child(2) {
+  margin-left: 40px;
+  background: yellow;
+}
+
+.codingContainer .codingChild1 span:nth-child(3) {
+  background: green;
+  margin-left: 70px;
+}
+
+.codingContainer .codingChild2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  background: #04293a;
+  border-radius: 8px;
+}
+
+.codingContainer .codingChild2 .codingCounter {
+  text-align: center;
+  width: 4%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.codingContainer .codingChild2 .codingCounter p {
+  margin-top: 18.8px;
+  height: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.codingContainer .codingChild3 {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  margin-top: 55px;
+}
+
+.codingContainer .codingChild3 p {
+  margin-top: 20px;
+  height: 15px;
+}
+
+.snakeContainer {
+  padding: 10px;
+  position: absolute;
+  width: 80%;
+  height: 15%;
+  background: #000;
+  bottom: 85%;
+  border-radius: 5px;
+}
+
+.snakeContainer .snake {
+  position: absolute;
+  -webkit-animation: snakeMove 10s infinite;
+          animation: snakeMove 10s infinite;
+}
+
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.codingTextContainer {
+  position: absolute;
+  margin-top: -2.3px;
+}
+
+.codingTextContainer span {
+  font-family: "Amatic SC", cursive;
+  font-size: 25.5px;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=SecondPage.css.map */

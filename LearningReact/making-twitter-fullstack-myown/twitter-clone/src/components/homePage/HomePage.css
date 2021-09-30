@@ -1,0 +1,488 @@
+.homePageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+}
+
+.homePageContainer .homePageLeftBar {
+  width: 30%;
+  height: 100%;
+  background-color: #000;
+  border-right: solid rgba(128, 128, 128, 0.3) 0.12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  z-index: 1000;
+}
+
+.homePageContainer .homePageLeftBar .leftBarIconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.homePageContainer .homePageLeftBar .leftBarIconsContainer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 80%;
+  height: 7%;
+  padding-left: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.homePageContainer .homePageLeftBar .leftBarIconsContainer .leftBarLinkIcon:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.homePageContainer .homePageLeftBar .leftBarIconsContainer button {
+  width: 80%;
+  height: 7%;
+  border-radius: 50px;
+  background: #02b7ff;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.homePageContainer .homePageLeftBar .leftBarIconsContainer .leftBarIconProfileContainer {
+  width: 90%;
+  height: 8%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.homePageContainer .homePageLeftBar .leftBarIconsContainer .leftBarIconProfileContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 20%;
+  border-radius: 50%;
+  top: 10;
+}
+
+.homePageContainer .homePageLeftBar .leftBarIconsContainer .leftBarIconProfileContainer:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.homePageContainer .homePageMiddleContainer {
+  width: 40%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  left: 30%;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageMiddleHeader {
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  width: 40%;
+  height: 4%;
+  background-color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: inset 0 0 0 0.2px gray;
+          box-shadow: inset 0 0 0 0.2px gray;
+  position: fixed;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageMiddleHeader h1 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageMiddleHeader .flareIcon {
+  z-index: 10000;
+  color: #fff !important;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageStatusContainer {
+  margin-top: 4%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  min-height: 12vh;
+  background-color: #000;
+  padding: 1.5%;
+  -webkit-box-shadow: inset 0 0 0 0.12px gray;
+          box-shadow: inset 0 0 0 0.12px gray;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageStatusContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 7%;
+  border-radius: 50%;
+  position: absolute;
+  top: 10;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageStatusContainer .homePageStatusInfoType {
+  margin-left: 10%;
+  width: 90%;
+  min-height: 12vh;
+  background-color: #000;
+  padding: 1%;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageStatusContainer .homePageStatusInfoType textarea {
+  background-color: black;
+  width: 100%;
+  border: none;
+  min-height: 10vh;
+  color: white;
+  font-size: 1.25rem;
+  padding: 3%;
+  border-style: none;
+  resize: none;
+  overflow: hidden;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageStatusContainer .homePageStatusInfoType textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageStatusContainer .homePageStatusInfoType .homePageStatusInfoTypeButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #02b7ff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageStatusContainer .homePageStatusInfoType .homePageStatusInfoTypeButtons .homePageStatusInfoTypeButtonsTweet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #02b7ff;
+  width: 12%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.homePageContainer .homePageMiddleContainer .homePageStatusContainer .homePageStatusInfoType .homePageStatusInfoTypeButtons .homePageStatusInfoTypeButtonsTweet button {
+  background-color: #02b7ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.homePageContainer .homePageMiddleContainer .tweetContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  border-top: solid rgba(128, 128, 128, 0.3) 0.12px;
+  padding: 5px;
+  min-height: 10%;
+}
+
+.homePageContainer .homePageMiddleContainer .tweetContainer .tweetPfp {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 8%;
+  border-radius: 50%;
+}
+
+.homePageContainer .homePageMiddleContainer .tweetContainer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 70px;
+}
+
+.homePageContainer .homePageMiddleContainer .tweetContainer span .tweetContainerUserName {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.homePageContainer .homePageMiddleContainer .tweetContainer span .tweetContainerUserNameat {
+  font-size: 15px;
+  margin-left: 10px;
+  color: rgba(128, 128, 128, 0.5);
+}
+
+.homePageContainer .homePageMiddleContainer .tweetContainer p {
+  top: 30px;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+.homePageContainer .homePageMiddleContainer .tweetContainer .tweetImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 80%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  max-height: 300px;
+  border-radius: 20px;
+}
+
+.homePageContainer .homePageMiddleContainer .tweetContainer .tweetImageContainer .tweetImage {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.homePageContainer .homePageMiddleContainer .messagesContainer {
+  width: 100%;
+  height: 70vh;
+}
+
+.homePageContainer .homePageMiddleContainer .messagesContainer h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: solid rgba(128, 128, 128, 0.3) 0.12px;
+  border-top: solid rgba(128, 128, 128, 0.3) 0.12px;
+}
+
+.homePageContainer .homePageMiddleContainer .profileContainer {
+  width: 100%;
+  height: 79.5vh;
+}
+
+.homePageContainer .homePageMiddleContainer .profileContainer .profileDataContainer {
+  width: 100%;
+  height: 25vh;
+  position: relative;
+  padding: 10px;
+  border-top: solid rgba(128, 128, 128, 0.3) 0.12px;
+}
+
+.homePageContainer .homePageMiddleContainer .profileContainer .profileDataContainer .tweetPfp {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 10%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.homePageContainer .homePageMiddleContainer .profileContainer .profileDataContainer h3 {
+  position: absolute;
+  bottom: 1%;
+  left: 13%;
+  color: white;
+  text-transform: uppercase;
+}
+
+.homePageContainer .homePageMiddleContainer .profileContainer .profileDataContainer .bgUserImg {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.homePageContainer .homePageMiddleContainer .profileContainer .tweetsText {
+  margin-top: 10px;
+  border-top: solid rgba(128, 128, 128, 0.3) 0.12px;
+  text-align: center;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.homePageContainer .homePageRightBar {
+  width: 30%;
+  height: 100%;
+  background-color: #000;
+  border-left: solid rgba(128, 128, 128, 0.3) 0.12px;
+  position: fixed;
+  z-index: 1000;
+  left: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homePageContainer .homePageRightBar .rigthBarItemsContainer {
+  position: absolute;
+  top: 10%;
+  width: 60%;
+  height: 600px;
+  background: rgba(128, 128, 128, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.homePageContainer .homePageRightBar .rigthBarItemsContainer h1 {
+  margin-top: 10px;
+  color: white;
+  font-size: 25px;
+}
+
+.homePageContainer .homePageRightBar .rigthBarItemsContainer ul {
+  list-style-type: none;
+  margin-top: 15%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.homePageContainer .homePageRightBar .rigthBarItemsContainer ul li {
+  color: white;
+  margin-top: 10%;
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.homePageContainer .homePageRightBar .rigthBarItemsContainer ul li span {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.homePageContainer .homePageRightBar .rigthBarItemsContainer ul li span p {
+  margin-top: -20%;
+}
+
+.homePageContainer .homePageRightBar .rigthBarItemsContainer ul li span:hover {
+  background: #02b7ff;
+}
+
+.homePageContainer .homePageRightBar .rigthBarItemsContainer ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.homePageContainer .homePageRightBar form {
+  position: absolute;
+  top: 3%;
+  background-color: rgba(128, 128, 128, 0.1);
+  border: none;
+  color: white;
+  width: 60%;
+  border-radius: 20px;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homePageContainer .homePageRightBar form input {
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0.0001);
+  border: none;
+  color: #fff;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.homePageContainer .homePageRightBar form input:focus {
+  outline: none;
+}
+
+.homePageContainer .homePageRightBar form button {
+  width: 10%;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+/*# sourceMappingURL=HomePage.css.map */

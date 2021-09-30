@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  //background-color: blue;
+  background-image: url("./sky-wallpaper-hd-54rs.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .weatherContainer {
+    width: 40%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    box-shadow: 0 0 0 2px rgba(128, 128, 128, 0.1);
+
+    .searchbarContainer {
+      width: 70%;
+      height: 14%;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 2px rgba(128, 128, 128, 0.1);
+
+      input {
+        padding: 10px;
+        font-size: 2rem;
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+        border: none;
+        background: transparent;
+      }
+      input:focus {
+        outline: none;
+      }
+
+      button {
+        width: 7%;
+        margin-left: 10px;
+        height: 70%;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background: rgba(255, 255, 255, 0.7);
+        transition: all 0.4s ease;
+      }
+      button:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+    .weatherInfoContainer {
+      width: 95%;
+      height: 80%;
+      margin-top: 3%;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      padding-left: 100px;
+      display: grid;
+      align-items: center;
+      //border: solid red;
+      box-shadow: 0 0 0 5px rgba(128, 128, 128, 0.1);
+
+      .mainItem {
+        width: 100%;
+        height: 40%;
+        //border: solid blue;
+        margin-left: -8%;
+
+        .weatherDesc {
+          position: absolute;
+          top: 61%;
+          left: 45%;
+        }
+
+        .weatherImg {
+          object-fit: contain;
+          position: absolute;
+          width: 100px;
+          top: 56%;
+          left: 57%;
+        }
+      }
+      .spanContainer {
+        .temp {
+          position: absolute;
+          font-size: 70px;
+          margin-left: 0;
+          h4 {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            font-size: 30px;
+          }
+          h6 {
+            position: absolute;
+            top: 40px;
+            font-size: 10px;
+            left: 80px;
+          }
+        }
+
+        .mintemp {
+          position: absolute;
+          font-size: 70px;
+          margin-left: 12.5%;
+
+          h4 {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            font-size: 30px;
+          }
+          h6 {
+            font-size: 10px;
+            position: absolute;
+            top: 57px;
+            left: 80px;
+          }
+        }
+
+        .maxtemp {
+          position: absolute;
+          font-size: 70px;
+          margin-left: 25%;
+
+          h4 {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            font-size: 30px;
+          }
+          h6 {
+            font-size: 10px;
+            position: absolute;
+            top: 57px;
+            left: 80px;
+          }
+        }
+
+        .hpressure {
+          display: flex;
+          position: absolute;
+          top: 58%;
+
+          .humidity {
+            position: absolute;
+            top: 30px;
+          }
+          .cityNameClass {
+            width: 200px;
+            position: absolute;
+            top: 60px;
+          }
+        }
+      }
+    }
+  }
+}

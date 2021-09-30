@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sidebar{
+    padding: 20px;
+    transition: all .8s ease;
+    position:absolute;
+}
+
+li{
+    margin-top: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: all 0.6s ease;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:hover{
+    background: rgba(255,255,255,0.5)
+}
+
+.divContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    height: 100vh;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    width: 20px;
+}
+
+.burger{
+    margin: 20px;
+    width: 30px;
+    position:absolute;
+    animation: anim 1.5s infinite;
+    transition: all 2s ease;
+}
+
+span{
+    font-size: 80px;
+}
+
+.btn{
+    background: rgb(100,0,255);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.btn:hover{
+    background: rgb(41, 0, 104);
+    color: white;
+}
+
+@keyframes anim {
+    0%{
+        width: 30px;
+    }
+    50% {
+        width: 60px; 
+    }
+    100%{
+        width: 30px;
+    }
+}

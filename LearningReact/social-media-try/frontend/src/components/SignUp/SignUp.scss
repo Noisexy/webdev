@@ -1,0 +1,253 @@
+$purple1: #4400b3;
+$purple2: #4e00ca;
+$purple3: #5700e2;
+$purple4: #6000fa;
+$purple5: #6d12ff;
+$purple6: #7c2aff;
+$purple7: #8a42ff;
+$purple8: #9959ff;
+$purple9: #a771ff;
+$purple10: #b689ff;
+$purple11: #c5a0ff;
+$purple12: #d3b8ff;
+$purple13: #e2d0ff;
+$purple14: #f0e7ff;
+$white: #fff;
+$black: #000;
+
+.signUp {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .errorAlert {
+    position: absolute;
+    top: 25%;
+    left: 59%;
+    text-align: center;
+    width: 25%;
+  }
+
+  .phone {
+    width: 230px;
+    height: 45%;
+    background: $white;
+    border-radius: 30px;
+    position: absolute;
+    left: 20%;
+    border: solid $black 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .pfp {
+      width: 40%;
+      height: 20%;
+      background: $purple4;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .circle {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        background-color: $white;
+        position: absolute;
+      }
+    }
+    .notch {
+      width: 50%;
+      height: 5%;
+      border-radius: 20px;
+      background: $white;
+      position: absolute;
+      top: -2%;
+      background: $black;
+    }
+    .phoneSignContainer {
+      margin-top: 10px;
+      width: 70%;
+      height: 40%;
+      border-radius: 10px;
+      background: $purple13;
+      border: solid $purple12;
+      display: flex;
+      align-items: flex-start;
+      padding: 10px;
+      position: relative;
+      flex-direction: column;
+      justify-content: flex-start;
+      .signLine {
+        background: $white;
+        width: 80%;
+        height: 8%;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .circle1 {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background-color: $purple2;
+    top: -102.5%;
+    left: -70%;
+    border: solid $purple1 10px;
+  }
+  .circle2 {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background-color: $purple2;
+    top: 50%;
+    left: 70%;
+    border: solid $purple1 10px;
+  }
+
+  .signUpContainer {
+    width: 520px;
+    height: 40%;
+    background-color: $purple14;
+    border: solid $purple12;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //text-align: center;
+    padding: 30px;
+    position: absolute;
+    right: 15%;
+    z-index: 10;
+
+    .placeholder {
+      width: 80%;
+      height: 10%;
+      margin-top: 30px;
+      position: relative;
+      input {
+        width: 100%;
+        height: 100%;
+        //border-radius: 20px;
+        border: none;
+        background: transparent;
+        border-bottom: solid black;
+        padding: 10px;
+        font-size: 1.1rem;
+      }
+      input:focus {
+        outline: none;
+      }
+
+      h3 {
+        position: absolute;
+        top: -80%;
+        left: 0%;
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .sendButton,
+    .alreadyButton {
+      padding: 6px;
+      background: $purple6;
+      margin-top: 6%;
+      border-radius: 20px;
+      border: none;
+      width: 50%;
+      min-height: 10%;
+      color: #fff;
+      font-size: 1.3rem;
+      //border: solid black;
+      //background: #fff;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background: $purple4;
+    }
+    .alreadyButton {
+      width: 300px;
+      position: absolute;
+      top: 100%;
+      background: $purple6;
+      border-radius: 20px;
+      border: none;
+      color: $white;
+      height: 4%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .signUp {
+    .phone {
+      left: 10%;
+    }
+    .circle1 {
+      top: -10000px !important;
+      left: -1800px !important;
+    }
+    .circle2 {
+      top: -100px;
+      left: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .phone {
+      display: none;
+    }
+    .signUpContainer {
+      position: static;
+      .placeholder {
+        h3 {
+          font-size: 0.8rem;
+        }
+      }
+      .sendButton {
+        font-size: 0.8rem;
+        padding: 0;
+        min-height: 25px;
+      }
+      .alreadyButton {
+        top: 70% !important;
+        height: 0%;
+      }
+    }
+    .circle1 {
+      top: -1300px !important;
+      left: -1800px !important;
+    }
+    .circle2 {
+      top: -100px;
+      left: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signUp {
+    .signUpContainer {
+      width: 300px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+$purple1: #4400b3;
+$purple2: #4e00ca;
+$purple3: #5700e2;
+$purple4: #6000fa;
+$purple5: #6d12ff;
+$purple6: #7c2aff;
+$purple7: #8a42ff;
+$purple8: #9959ff;
+$purple9: #a771ff;
+$purple10: #b689ff;
+$purple11: #c5a0ff;
+$purple12: #d3b8ff;
+$purple13: #e2d0ff;
+$purple14: #f0e7ff;
+$white: #fff;
+$black: #000;
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
+$font: "PT Serif", serif;
+
+.modal {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: $purple1;
+  left: 34.5%;
+  top: 10%;
+  border-radius: 20px;
+  position: fixed;
+
+  .modalForm {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .statusContent {
+      resize: none;
+      width: 80%;
+      height: 70%;
+      font-size: 1.3rem;
+      border: none;
+      outline: none;
+      padding: 10px;
+      overflow: auto;
+    }
+    .submitButton {
+      margin-top: 10px;
+      border: none;
+      width: 200px;
+      height: 30px;
+      border-radius: 10px;
+      transition: all 0.5s ease;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .submitButton:hover {
+      background-color: rgb(220, 220, 220);
+    }
+
+    .modalBurger {
+      position: absolute;
+      width: 30px;
+      height: 5px;
+      background-color: $white;
+      right: 20px;
+      top: 20px;
+      transform: rotate(-45deg);
+    }
+    .burger2 {
+      margin-top: 0px;
+      transform: rotate(45deg);
+    }
+  }
+}

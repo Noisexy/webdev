@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+}
+
+.container {
+  // scroll-snap-type: y mandatory;
+  // //overflow-y: scroll;
+  height: 100vh;
+}

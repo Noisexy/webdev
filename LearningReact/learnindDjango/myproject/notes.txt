@@ -1,0 +1,29 @@
+Learning notes
+
+to create a django project we need to use the command 
+django-admin startproject nameoftheproject
+
+to create an app within the django project we need to run the command
+python manage.py startapp nameoftheapp 
+
+to run a server we need to run the command 
+python manage.py runserver
+
+
+FOR THE DJANGO'S DATABASE
+//we create a model like this in the models.py file in our app 
+class Feature (models.Model):
+    //data 
+then we need to run these commands
+python manage.py makemigrations
+python manage.py migrate
+
+this will add our model to the database 
+
+to see this reflected we need to go to the django admin panel 
+need to make a superuser with
+python manage.py createsuperuser
+
+we also need to register our model in the admin.py in our app by 
+from .model import "modelName"
+admin.site.register(modelName)

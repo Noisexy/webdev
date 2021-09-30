@@ -1,0 +1,389 @@
+.homePageContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+
+  .homePageLeftBar {
+    width: 30%;
+    height: 100%;
+    background-color: #000;
+    border-right: solid rgba(128, 128, 128, 0.3) 0.12px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1000;
+    .leftBarIconsContainer {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 100vh;
+      //outline: solid red;
+      color: white;
+      justify-content: space-around;
+      align-items: flex-start;
+
+      span {
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 20px;
+        width: 80%;
+        height: 7%;
+        padding-left: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+      }
+
+      .leftBarLinkIcon:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      button {
+        width: 80%;
+        height: 7%;
+        border-radius: 50px;
+        background: rgb(2, 183, 255);
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .leftBarIconProfileContainer {
+        width: 90%;
+        height: 8%;
+        //background: red;
+        //outline: solid cyan 1px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        transition: all 0.4s ease-in;
+        border-radius: 50px;
+        padding: 10px;
+        img {
+          object-fit: contain;
+          width: 20%;
+          border-radius: 50%;
+          //position: absolute;
+          top: 10;
+        }
+      }
+      .leftBarIconProfileContainer:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+  .homePageMiddleContainer {
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 30%;
+    //border: solid gray 0.3px;
+    .homePageMiddleHeader {
+      z-index: 1000;
+      display: flex;
+      padding: 10px;
+      width: 40%;
+      height: 4%;
+      background-color: #000;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: inset 0 0 0 0.2px rgb(128, 128, 128);
+      position: fixed;
+
+      h1 {
+        color: #fff;
+        font-weight: bold;
+      }
+      .flareIcon {
+        z-index: 10000;
+        color: #fff !important;
+      }
+    }
+
+    .homePageStatusContainer {
+      margin-top: 4%;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      position: relative;
+      min-height: 12vh;
+      background-color: #000;
+      padding: 1.5%;
+      box-shadow: inset 0 0 0 0.12px rgb(128, 128, 128);
+      img {
+        object-fit: contain;
+        width: 7%;
+        border-radius: 50%;
+        position: absolute;
+        top: 10;
+      }
+      .homePageStatusInfoType {
+        margin-left: 10%;
+        width: 90%;
+        min-height: 12vh;
+        background-color: #000;
+        padding: 1%;
+        //position: relative;
+
+        textarea {
+          background-color: black;
+          width: 100%;
+          border: none;
+          min-height: 10vh;
+          color: white;
+          font-size: 1.25rem;
+          padding: 3%;
+          border-style: none;
+          resize: none;
+          overflow: hidden;
+        }
+
+        textarea:focus {
+          border: none;
+          outline: none;
+        }
+
+        .homePageStatusInfoTypeButtons {
+          display: flex;
+          color: rgb(2, 183, 255);
+          justify-content: space-between;
+
+          .homePageStatusInfoTypeButtonsTweet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(2, 183, 255);
+            width: 12%;
+            border-radius: 20px;
+            cursor: pointer;
+            button {
+              background-color: rgb(2, 183, 255);
+              color: white;
+              font-weight: bold;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+              height: 100%;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .tweetContainer {
+      display: flex;
+      position: relative;
+      background-color: rgba(0, 0, 0, 1);
+      flex-direction: column;
+      color: white;
+      border-top: solid rgba(128, 128, 128, 0.3) 0.12px;
+      padding: 5px;
+      min-height: 10%;
+
+      .tweetPfp {
+        position: absolute;
+        object-fit: contain;
+        width: 8%;
+        border-radius: 50%;
+      }
+      span {
+        display: flex;
+        position: absolute;
+        left: 70px;
+        .tweetContainerUserName {
+          text-transform: uppercase;
+          font-size: 17px;
+        }
+        .tweetContainerUserNameat {
+          font-size: 15px;
+          margin-left: 10px;
+          color: rgba(128, 128, 128, 0.5);
+        }
+      }
+      p {
+        top: 30px;
+        margin-left: 10%;
+        margin-top: 4%;
+      }
+
+      .tweetImageContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        width: 80%;
+        margin: auto;
+        object-fit: cover;
+        overflow: hidden;
+        max-height: 300px;
+        border-radius: 20px;
+        .tweetImage {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+    }
+
+    .messagesContainer {
+      //background: #0ef;
+      width: 100%;
+      height: 70vh;
+      //padding: 20px;
+
+      h1 {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        border-bottom: solid rgba(128, 128, 128, 0.3) 0.12px;
+        border-top: solid rgba(128, 128, 128, 0.3) 0.12px;
+      }
+    }
+
+    .profileContainer {
+      //background: white;
+      width: 100%;
+      height: 79.5vh;
+
+      .profileDataContainer {
+        width: 100%;
+        height: 25vh;
+        //background-color: #0ef;
+        position: relative;
+        padding: 10px;
+
+        border-top: solid rgba(128, 128, 128, 0.3) 0.12px;
+        .tweetPfp {
+          object-fit: contain;
+          width: 10%;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+        }
+        h3 {
+          position: absolute;
+          bottom: 1%;
+          left: 13%;
+          color: white;
+          text-transform: uppercase;
+        }
+        .bgUserImg {
+          object-fit: fill;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+        }
+      }
+
+      .tweetsText {
+        margin-top: 10px;
+        border-top: solid rgba(128, 128, 128, 0.3) 0.12px;
+        text-align: center;
+        color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .homePageRightBar {
+    width: 30%;
+    height: 100%;
+    background-color: #000;
+    border-left: solid rgba(128, 128, 128, 0.3) 0.12px;
+    position: fixed;
+    z-index: 1000;
+    left: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    //outline: solid blue;
+
+    .rigthBarItemsContainer {
+      position: absolute;
+      top: 10%;
+      width: 60%;
+      height: 600px;
+      background: rgba(128, 128, 128, 0.1);
+      border-radius: 20px;
+      text-align: center;
+      // padding: 10px;
+      h1 {
+        margin-top: 10px;
+        color: white;
+        font-size: 25px;
+      }
+      ul {
+        list-style-type: none;
+        //outline: solid red;
+        margin-top: 15%;
+        font-size: 20px;
+        cursor: pointer;
+        li {
+          color: white;
+          margin-top: 10%;
+
+          min-height: 70px;
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          justify-content: space-between;
+          position: relative;
+          transition: all 0.6s ease;
+          span {
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            p {
+              margin-top: -20%;
+            }
+          }
+          span:hover {
+            background: rgb(2, 183, 255);
+          }
+        }
+        li:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+
+    form {
+      position: absolute;
+      top: 3%;
+      background-color: rgba(128, 128, 128, 0.1);
+      border: none;
+      color: white;
+      width: 60%;
+      border-radius: 20px;
+      padding: 2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // height: 30px;
+      input {
+        width: 90%;
+        background-color: rgba(128, 128, 128, 0.0001);
+        border: none;
+        color: #fff;
+        height: 100%;
+        font-size: 1.2rem;
+      }
+      input:focus {
+        outline: none;
+      }
+      button {
+        width: 10%;
+        background-color: transparent;
+        border: none;
+        color: white;
+      }
+    }
+  }
+}

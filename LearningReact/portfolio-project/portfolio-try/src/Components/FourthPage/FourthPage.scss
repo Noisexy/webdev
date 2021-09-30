@@ -1,0 +1,126 @@
+.fourthPageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-image: url("../../Images/blob-haikei.svg");
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #0e0e0e;
+  animation: bgAnim4 7s infinite, blobAnim4 7s infinite;
+
+  @keyframes bgAnim4 {
+    0% {
+      background-position: center;
+    }
+    25% {
+      background-position: top;
+    }
+    50% {
+      background-position: bottom;
+    }
+    100% {
+      background-position: center;
+    }
+  }
+
+  @keyframes blobAnim4 {
+    0% {
+      background-size: 0;
+    }
+    50% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 0;
+    }
+  }
+
+  .fourthPageEmailContainer {
+    width: 40%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    h1 {
+      font-size: 3rem;
+    }
+    .infoEmailContainer {
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      margin-top: 5%;
+      position: relative;
+
+      input {
+        width: 100%;
+        background-color: transparent;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: all 0.4s ease;
+        font-size: 18px;
+      }
+
+      input:focus {
+        outline: none;
+        background-color: rgba(0, 0, 0, 1);
+      }
+    }
+
+    .emailContent {
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      margin-top: 5%;
+      position: relative;
+      height: 50%;
+      textarea {
+        width: 100%;
+        background-color: transparent;
+        border-radius: 20px;
+        resize: none;
+        overflow: hidden;
+        border: none;
+        padding: 10px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+        transition: all 0.4s ease;
+        font-size: 18px;
+      }
+      textarea:focus {
+        outline: none;
+        background-color: rgba(0, 0, 0, 1);
+      }
+    }
+
+    button {
+      margin-top: 3%;
+      font-family: Arial, Helvetica, sans-serif;
+      background: rgba(0, 0, 0, 0.3);
+      border: none;
+      width: 20%;
+      border-radius: 10px;
+      height: 5%;
+      color: gray;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+    button:hover {
+      background: rgba(0, 0, 0, 1);
+    }
+  }
+}

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
+.homePage {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+}
+
+.homePage .sideBarLeftNavContainer {
+  width: 12%;
+  height: 100vh;
+  background-color: #6000fa;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homePage .sideBarLeftNavContainer .search {
+  width: 95%;
+  height: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #4400b3;
+  border-radius: 10px;
+}
+
+.homePage .sideBarLeftNavContainer .search .searchContainer {
+  border: none;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  background-color: #4400b3;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.homePage .sideBarLeftNavContainer .searchContainer:focus {
+  outline: none;
+}
+
+.homePage .sideBarLeftNavContainer .searchContainer::-webkit-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.homePage .sideBarLeftNavContainer .searchContainer:-ms-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.homePage .sideBarLeftNavContainer .searchContainer::-ms-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.homePage .sideBarLeftNavContainer .searchContainer::placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.homePage .sideBarLeftNavContainer ul {
+  list-style: none;
+}
+
+.homePage .sideBarLeftNavContainer ul li {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.homePage .sideBarLeftNavContainer ul li .iconLinkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homePage .sideBarLeftNavContainer ul li:hover {
+  background: #4400b3;
+}
+
+.homePage .sideBarLeftNavContainer .userContainer {
+  width: 100%;
+  height: 5%;
+  background: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homePage .middleContainer {
+  width: 85%;
+  height: 100vh;
+  position: absolute;
+  left: 12%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 48px;
+}
+
+.homePage .middleContainer .middleNav {
+  width: 35%;
+  height: 5vh;
+  background-color: #6000fa;
+  border-radius: 10px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+  top: 0;
+}
+
+.homePage .middleContainer .statusContainer {
+  width: 100%;
+}
+
+.homePage .middleContainer .statusContainer .statusTextContainer {
+  width: 100%;
+  min-height: 15vh;
+  background: #fff;
+  color: #000;
+  border-bottom: solid #d3b8ff 0.5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homePage .middleContainer .statusContainer .statusTextContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 4%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.homePage .middleContainer .statusContainer .statusTextContainer h2 {
+  margin-left: 100px;
+}
+
+.homePage .middleContainer .statusContainer .statusTextContainer p {
+  margin-left: 100px;
+}
+
+.homePage .middleContainer .statusContainer .statusTextContainer:nth-child(1) {
+  border-top: solid #d3b8ff 0.5px;
+}
+
+.homePage .sideBarRightNavContainer {
+  width: 3%;
+  height: 100vh;
+  background-color: #6000fa;
+  position: fixed;
+  right: 0;
+}
+
+.homePage .sideBarRightNavContainer .homeIcon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=homePage.css.map */

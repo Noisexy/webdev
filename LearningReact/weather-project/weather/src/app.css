@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./sky-wallpaper-hd-54rs.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .weatherContainer {
+  width: 40%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 0 2px rgba(128, 128, 128, 0.1);
+          box-shadow: 0 0 0 2px rgba(128, 128, 128, 0.1);
+}
+
+.app .weatherContainer .searchbarContainer {
+  width: 70%;
+  height: 14%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 0 2px rgba(128, 128, 128, 0.1);
+          box-shadow: 0 0 0 2px rgba(128, 128, 128, 0.1);
+}
+
+.app .weatherContainer .searchbarContainer input {
+  padding: 10px;
+  font-size: 2rem;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+}
+
+.app .weatherContainer .searchbarContainer input:focus {
+  outline: none;
+}
+
+.app .weatherContainer .searchbarContainer button {
+  width: 7%;
+  margin-left: 10px;
+  height: 70%;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.app .weatherContainer .searchbarContainer button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.app .weatherContainer .weatherInfoContainer {
+  width: 95%;
+  height: 80%;
+  margin-top: 3%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding-left: 100px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 0 5px rgba(128, 128, 128, 0.1);
+          box-shadow: 0 0 0 5px rgba(128, 128, 128, 0.1);
+}
+
+.app .weatherContainer .weatherInfoContainer .mainItem {
+  width: 100%;
+  height: 40%;
+  margin-left: -8%;
+}
+
+.app .weatherContainer .weatherInfoContainer .mainItem .weatherDesc {
+  position: absolute;
+  top: 61%;
+  left: 45%;
+}
+
+.app .weatherContainer .weatherInfoContainer .mainItem .weatherImg {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  width: 100px;
+  top: 56%;
+  left: 57%;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .temp {
+  position: absolute;
+  font-size: 70px;
+  margin-left: 0;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .temp h4 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 30px;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .temp h6 {
+  position: absolute;
+  top: 40px;
+  font-size: 10px;
+  left: 80px;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .mintemp {
+  position: absolute;
+  font-size: 70px;
+  margin-left: 12.5%;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .mintemp h4 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 30px;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .mintemp h6 {
+  font-size: 10px;
+  position: absolute;
+  top: 57px;
+  left: 80px;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .maxtemp {
+  position: absolute;
+  font-size: 70px;
+  margin-left: 25%;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .maxtemp h4 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 30px;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .maxtemp h6 {
+  font-size: 10px;
+  position: absolute;
+  top: 57px;
+  left: 80px;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .hpressure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 58%;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .hpressure .humidity {
+  position: absolute;
+  top: 30px;
+}
+
+.app .weatherContainer .weatherInfoContainer .spanContainer .hpressure .cityNameClass {
+  width: 200px;
+  position: absolute;
+  top: 60px;
+}
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,465 @@
+.layer1 {
+  background-image: url("../../Images/layer1.svg");
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  scroll-snap-align: start;
+  height: 100vh;
+  position: relative;
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+@-webkit-keyframes moveBg {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+@-webkit-keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home .HomePageWrapperDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75%;
+  height: 75%;
+}
+
+.home .HomePageWrapperDiv .containerSection1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 20%;
+  border-radius: 10px;
+  -webkit-animation: anim 1.5s linear infinite, show 0.8s forwards;
+          animation: anim 1.5s linear infinite, show 0.8s forwards;
+}
+
+@-webkit-keyframes show {
+  from {
+    -webkit-transform: translateX(-500px) rotate(45deg);
+            transform: translateX(-500px) rotate(45deg);
+    overflow: hidden;
+  }
+  to {
+    -webkit-transform: translateX(0) rotate(45deg);
+            transform: translateX(0) rotate(45deg);
+    overflow: visible;
+  }
+}
+
+@keyframes show {
+  from {
+    -webkit-transform: translateX(-500px) rotate(45deg);
+            transform: translateX(-500px) rotate(45deg);
+    overflow: hidden;
+  }
+  to {
+    -webkit-transform: translateX(0) rotate(45deg);
+            transform: translateX(0) rotate(45deg);
+    overflow: visible;
+  }
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+.home .HomePageWrapperDiv .containerSection1 span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ff0101), color-stop(20%, #cffe00), color-stop(40%, #01ff66), color-stop(59%, #0075ff), color-stop(79%, #c20ffe), color-stop(99%, #fd010c));
+  background: linear-gradient(90deg, #ff0101 0%, #cffe00 20%, #01ff66 40%, #0075ff 59%, #c20ffe 79%, #fd010c 99%);
+}
+
+.home .HomePageWrapperDiv .containerSection1 span:nth-child(1) {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.home .HomePageWrapperDiv .containerSection1 span:nth-child(2) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.home .HomePageWrapperDiv .containerSection1 span:nth-child(3) {
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+
+.home .HomePageWrapperDiv .containerSection1 .ImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  overflow: hidden;
+  background: #030303;
+  width: 100%;
+  height: 100%;
+  margin-right: 1000px;
+  margin-bottom: 150px;
+  border-radius: 10px;
+}
+
+.home .HomePageWrapperDiv .containerSection1 .ImageContainer img {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 60px;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+  right: 20%;
+  text-align: center;
+  -webkit-animation: showText 0.8s forwards;
+          animation: showText 0.8s forwards;
+}
+
+@-webkit-keyframes showText {
+  from {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    overflow: hidden;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    overflow: visible;
+  }
+}
+
+@keyframes showText {
+  from {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    overflow: hidden;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    overflow: visible;
+  }
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 h1 {
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 p {
+  font-family: "Amatic SC", cursive;
+  color: gray;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 img {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 span {
+  position: absolute;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.411);
+  width: 70px;
+  margin-top: 15px;
+  border-radius: 3px;
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 .cross1 {
+  margin-left: -85px;
+  width: 0;
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 .link1:hover .cross1 {
+  -webkit-animation: cross1 0.2s forwards;
+          animation: cross1 0.2s forwards;
+}
+
+@-webkit-keyframes cross1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85px;
+  }
+}
+
+@keyframes cross1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85px;
+  }
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 .cross2 {
+  margin-left: -60px;
+  width: 0;
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 .link2:hover .cross2 {
+  -webkit-animation: cross2 0.2s forwards;
+          animation: cross2 0.2s forwards;
+}
+
+@-webkit-keyframes cross2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+@keyframes cross2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 .cross3 {
+  margin-left: -100px;
+  width: 0%;
+}
+
+.home .HomePageWrapperDiv .textContainerSection1 .link3:hover .cross3 {
+  -webkit-animation: cross3 0.2s forwards;
+          animation: cross3 0.2s forwards;
+}
+
+@-webkit-keyframes cross3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes cross3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+.home .HomePageWrapperDiv .theme {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  left: 25.2%;
+  top: 75%;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+}
+
+.home .HomePageWrapperDiv .theme span {
+  width: 30px;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+@-webkit-keyframes LightToDarkAnim {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 70%;
+  }
+}
+
+@keyframes LightToDarkAnim {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 70%;
+  }
+}
+
+@-webkit-keyframes DarkToLightAnim {
+  from {
+    margin-left: 70%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes DarkToLightAnim {
+  from {
+    margin-left: 70%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.home .HomePageWrapperDiv .theme .btn1 {
+  background: #121212;
+}
+
+@media screen and (max-width: 1368px) {
+  .textContainerSection1 {
+    margin-right: -10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .containerSection1 {
+    margin-left: -120px;
+  }
+  .textContainerSection1 {
+    margin-right: -10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .containerSection1 {
+    width: 200px !important;
+    height: 200px !important;
+    left: auto !important;
+    margin-left: 0 !important;
+  }
+  .containerSection1 .ImageContainer img {
+    width: 500px;
+    height: 500px;
+    margin-left: 80px !important;
+  }
+  .textContainerSection1 {
+    right: auto !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .theme {
+    left: 42% !important;
+    top: 65% !important;
+  }
+}
+
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/*# sourceMappingURL=MainPage.css.map */
